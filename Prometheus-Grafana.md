@@ -27,7 +27,7 @@ management:
       exposure:
         include: health, info, metrics, prometheus
 ```
-
+<a href="https://www.google.com/" target="_blank">새 탭에서 열기</a>
 ## 프로메테우스(Prometheus) 설치
 - **[직접 설치](https://prometheus.io/download/)**
   ![1](https://user-images.githubusercontent.com/13326651/217295919-2f318760-24bf-45ed-b9a3-7276fd0f2b29.PNG)
