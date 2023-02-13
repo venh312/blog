@@ -1,5 +1,5 @@
-## apt update 
-설치 가능한 패키지 리스트를 최신화
+## 설치 가능한 패키지 리스트를 최신화
+```apt update```
 
 ## net-tools, vim, openssh-server, ufw 를 설치
 ```apt install net-tools vim openssh-server ufw```
