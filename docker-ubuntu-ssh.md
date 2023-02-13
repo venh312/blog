@@ -1,8 +1,8 @@
-## apt update && apt install net-tools vim openssh-server ufw
-apt update 후 net-tools, vim, openssh-server, ufw 를 설치한다.
-설치 중 나오는 프롬프트에는 알맞게 입력해준다.
+## apt update 
+설치 가능한 패키지 리스트를 최신화
 
-설치가 끝나면 우선 ufw 를 통해 ssh 를 allow 해준다.
+## apt install net-tools vim openssh-server ufw
+net-tools, vim, openssh-server, ufw 를 설치한다.
 
 ## ssh 접근 허용
 ```ufw allow ssh```
