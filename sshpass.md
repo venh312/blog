@@ -14,8 +14,8 @@
 ```sshpass -p [원격지 접속 계정의 암호] scp test.txt root@192.168.0.1:/home```
  
 ### sshpass 사용 방법
-```ubuntu@ubuntu-VirtualBox:~$ sshpass -h```
-Usage: sshpass [-f|-d|-p|-e] [-hV] command parameters
+```ubuntu@ubuntu-VirtualBox:~$ sshpass -h```   
+```Usage: sshpass [-f|-d|-p|-e] [-hV] command parameters
    -f filename   Take password to use from file
    -d number     Use number as file descriptor for getting password
    -p password   Provide password as argument (security unwise)
@@ -26,4 +26,4 @@ Usage: sshpass [-f|-d|-p|-e] [-hV] command parameters
    -v            Be verbose about what you're doing
    -h            Show help (this screen)
    -V            Print version information
-At most one of -f, -d, -p or -e should be used
+At most one of -f, -d, -p or -e should be used```
