@@ -1,8 +1,8 @@
 ## apt update 
 설치 가능한 패키지 리스트를 최신화
 
-## apt install net-tools vim openssh-server ufw
-net-tools, vim, openssh-server, ufw 를 설치한다.
+## net-tools, vim, openssh-server, ufw 를 설치
+```apt install net-tools vim openssh-server ufw```
 
 ## ssh 접근 허용
 ```ufw allow ssh```
