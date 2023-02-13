@@ -5,12 +5,12 @@
 ```sudo apt-get install sshpass```
  
 ### ssh 접속
-```sshpass -p [원격지 접속 계정의 암호] ssh test.sh root@192.168.0.1:/home```   
+```sshpass -p [원격지 접속 계정의 암호] ssh root@192.168.0.1```   
 
-### sh 실행
-```sshpass -p [원격지 접속 계정의 암호] ssh test.sh root@192.168.0.1:/home```   
+### 원격지에 있는 루트 경로에 있는 test.sh 실행
+```sshpass -p [원격지 접속 계정의 암호] ssh root@192.168.0.1 "sh /test.sh" ```   
 
-### scp를 이용한 파일 전송
+### scp를 이용한 파일 전송 -test.txt 파일을 원격지 /home 경로에 전송
 ```sshpass -p [원격지 접속 계정의 암호] scp test.txt root@192.168.0.1:/home```
  
 ### sshpass 사용 방법
