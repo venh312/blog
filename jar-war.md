@@ -7,7 +7,7 @@ class < jar < war < ear
 - JRE(Java Runtime Environment)만 가지고도 실행이 가능하다.
 - java -jar 로 실행할 수 있다.
 
-## WAR(Web Application aRchive)
+## WAR(Web Application Archive)
 - 웹 어플리케이션을 저장하고 압축해 놓은 파일
 - html, JSP, 서블릿 소스 등 배치 할 수 있는 웹 어플리케이션(Web Application) 압축 파일 포맷
 - war는 WAS 위에서 돌아갈 수 있다.
