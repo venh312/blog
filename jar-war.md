@@ -13,4 +13,4 @@ class < jar < war < ear
 - war는 WAS 위에서 돌아갈 수 있다.
 - Tomcat 위에 얹어서 디플로이한다.
 - WAR 파일도 JAVA의 JAR 옵션( java - jar)을 이용해 생성하는 JAR파일의 일종으로 웹어플리케이션 전체를 패키징하기 위한 jar 파일이다.
-- bootWar로 패키징하면 java -jar 로 실행할 수 있다.
+- bootWar로 빌드하고 임베디드 톰캣을 설정을 포함하면, java -jar 로 실행할 수 있다.
