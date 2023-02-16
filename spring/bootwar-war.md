@@ -29,9 +29,10 @@ Java 1.8, Spring Boot 2.7.8, Gradle, IntelliJ Community
 ## 프로젝트 환경 - [Spring initializr](https://start.spring.io/)
 ![1](https://user-images.githubusercontent.com/13326651/219359023-49d286aa-58bb-4fcc-b51b-3e5998617e2d.PNG)
 
-### 테스트 컨트롤러 생성
+## 테스트 컨트롤러 생성
+호출 테스트를 위해 컨트롤러를 생성한다.   
+
 ![image](https://user-images.githubusercontent.com/13326651/219362921-90b60fff-2191-4c8f-a077-0fb0ad37e223.png)   
-호출 테스트를 위해 @RestContoller로 간단한 테스트 컨트롤러를 생성한다.
 
 # bootWar 빌드
 2가지 방법으로 빌드 할 수 있다. **IDE** 를 통해 하는 방법과 **gradlew** 으로 빌드하는 방법을 소개한다.
