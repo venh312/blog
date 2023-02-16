@@ -61,7 +61,7 @@ Java 1.8, Spring Boot 2.7.8, Gradle, IntelliJ Community
 ### war 파일 이동 (외장 톰캣 설치 경로/webapps)
 ![image](https://user-images.githubusercontent.com/13326651/219394244-7614c19c-b6a9-4a9f-b9a4-8ddf929a22d6.png)
 
-
+### server.xml 수정
 
 # war 빌드
 
