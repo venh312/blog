@@ -1,4 +1,4 @@
-## 개요
+# 개요
 스프링부트 war 프로젝트를 bootwar, war로 빌드하여 내장·외장 톰캣으로 실행
 
 ### 성능
@@ -14,15 +14,14 @@
 내장 톰캣 실행 불가, 외장 톰캣 실행 가능
 
 ### 패키지 구성의 차이
+**bootWar**의 경우, 내장 톰캣으로 실행이 가능 하게 하는 **WEB-INF > lib-provided** 구성이 존재한다.
 |bootWar|war|
 |---|-------|
 |WEB-INF|WEB-INF|
 |META-INF|META-INF|
 |org||
 
-- **bootWar**의 경우, 내장 톰캣으로 단독 실행이 가능 하게 하는 **WEB-INF > lib-provided** 구성이 존재한다.
-
-## 배포 실습
+# 배포 실습
 
 ### 구성 환경
 Java 1.8, Spring Boot 2.7.8, Gradle, IntelliJ Community
@@ -34,7 +33,7 @@ Java 1.8, Spring Boot 2.7.8, Gradle, IntelliJ Community
 ![image](https://user-images.githubusercontent.com/13326651/219362921-90b60fff-2191-4c8f-a077-0fb0ad37e223.png)   
 호출 테스트를 위해 @RestContoller로 간단한 테스트 컨트롤러를 생성한다.
 
-## bootWar 빌드
+# bootWar 빌드
 2가지 방법으로 빌드 할 수 있다. **IDE** 를 통해 하는 방법과 **gradlew** 으로 빌드하는 방법을 소개한다.
 
 ### IntelliJ
@@ -59,10 +58,12 @@ Java 1.8, Spring Boot 2.7.8, Gradle, IntelliJ Community
 ![2](https://user-images.githubusercontent.com/13326651/219393787-df7a45c3-a89e-4c75-af9b-c61d39e58d87.PNG)   
 사용중인 운영체제에 맞게 톰캣을 다운로드 받는다.
 
-### war 파일 > 외장 톰캣 webapps 경로로 이동
+### war 파일 이동 (외장 톰캣 설치 경로/webapps)
 ![image](https://user-images.githubusercontent.com/13326651/219394244-7614c19c-b6a9-4a9f-b9a4-8ddf929a22d6.png)
 
 
+
+# war 빌드
 
 
 
