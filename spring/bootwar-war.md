@@ -61,7 +61,14 @@ Java 1.8, Spring Boot 2.7.8, Gradle, IntelliJ Community
 ### war 파일 이동 (외장 톰캣 설치 경로/webapps)
 ![image](https://user-images.githubusercontent.com/13326651/219394244-7614c19c-b6a9-4a9f-b9a4-8ddf929a22d6.png)
 
-### server.xml 수정
+### server.xml 수정 (Context 추가)
+```bash
+<Host name="localhost"  appBase="webapps" unpackWARs="true" autoDeploy="true">
+  <!-- 추가 -->
+  <Context docBase="toy-0.0.1-SNAPSHOT" path="/" reloadable="true" source="org.eclipse.jst.jee.server:toy"></Context>
+</Host>
+```
+
 
 # war 빌드
 
