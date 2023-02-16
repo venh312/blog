@@ -20,11 +20,11 @@
 |META-INF|META-INF|
 |org||
 
-- bootWar의 경우, 내장 톰캣으로 단독 실행이 가능 하게 하는 WEB-INF > lib-provided 구성이 존재한다.
+- **bootWar**의 경우, 내장 톰캣으로 단독 실행이 가능 하게 하는 **WEB-INF > lib-provided** 구성이 존재한다.
 
 ## 배포 실습
 
-### 구성환경
+### 구성 환경
 Java 1.8, Spring Boot 2.7.8, Gradle, IntelliJ Community
 
 ### 프로젝트 환경
@@ -33,6 +33,14 @@ Java 1.8, Spring Boot 2.7.8, Gradle, IntelliJ Community
 ### 테스트 컨트롤러 생성
 ![image](https://user-images.githubusercontent.com/13326651/219362921-90b60fff-2191-4c8f-a077-0fb0ad37e223.png)   
 호출 테스트를 위해 @RestContoller로 간단한 테스트 컨트롤러를 생성한다.
+
+## booWar 빌드
+2가지 방법으로 빌드 할 수 있다. **IDE** 를 통해 하는 방법과 **gradlew** 으로 빌드하는 방법을 소개한다.
+
+### IntelliJ
+![image](https://user-images.githubusercontent.com/13326651/219365981-1118c935-20d9-4037-a4be-37db2bdaad1d.png)
+
+### gradlew
 
 
 
