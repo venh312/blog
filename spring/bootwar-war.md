@@ -71,7 +71,7 @@ CMD 창에서 프로젝트 경로/build/libs 로 이동, 아래 명령어 입력
 ![image](https://user-images.githubusercontent.com/13326651/219394244-7614c19c-b6a9-4a9f-b9a4-8ddf929a22d6.png)
 
 ### server.xml 수정 (톰캣 설치 경로/conf)
-Context 추가   
+**Context추가**  
 ```bash
 <Host name="localhost"  appBase="webapps" unpackWARs="true" autoDeploy="true">
   <!-- 추가 -->
