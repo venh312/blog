@@ -82,6 +82,13 @@ Context 추가
 ```./shutdown .sh```
 
 # war 빌드
+2가지 방법으로 빌드 할 수 있다. **IDE** 를 통해 하는 방법과 **gradlew** 으로 빌드하는 방법을 소개한다.
 
+### IntelliJ
+![image](https://user-images.githubusercontent.com/13326651/219549817-b2c71bac-aabe-4dcd-9a17-be5b4833a548.png)
+
+### gradlew
+프로젝트 경로로 이동, 아래 명령어 입력   
+```./gradlew war```
 
 
