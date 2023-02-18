@@ -1,5 +1,5 @@
 # 개요
-스프링 부트 war 프로젝트를 bootwar, war로 빌드하여 내장·외장 톰캣으로 실행해본다.
+스프링 부트 war 패키징 프로젝트를 bootwar, war로 빌드하여 내장·외장 톰캣으로 실행해본다.
 
 ### 내장·외장 톰캣의 성능
 내장·외장 성능에 대해서 유의미한 큰 차이는 없다고 한다. 하지만 외장 톰캣에서 virtual host 같은 기능의 구성 시 간단하게 적용 가능하다.
@@ -8,13 +8,13 @@
 도메인 host에 따라 각각의 다른 루트 컨텍스트를 갖게하여 하나의 웹 애플리케이션 배포만으로 마치 여러 애플리케이션을 운영하는것처럼 하는 기능
 
 ### bootWar
-내장 톰캣 실행 가능, 외장 톰캣 실행 가능
+내장·외장 톰캣 실행 가능
 
 ### war
-내장 톰캣 실행 불가, 외장 톰캣 실행 가능
+외장 톰캣으로만 실행 가능
 
 ## 패키지 구성의 차이
-**bootWar**의 경우, 내장 톰캣으로 실행이 가능 하게 하는 **WEB-INF > lib-provided** 구성이 존재한다.
+**bootWar**의 경우, 내장 톰캣으로 실행이 가능 하게 해주는 WEB-INF > **lib-provided** 구성이 존재한다.
 |bootWar|war|
 |---|-------|
 |WEB-INF|WEB-INF|
@@ -67,7 +67,7 @@ CMD 창에서 프로젝트 경로/build/libs 로 이동, 아래 명령어 입력
 ### 구조
 ![image](https://user-images.githubusercontent.com/13326651/219555191-ec9bccc4-507e-400f-9238-3d028767afb6.png)
 
-### war 파일을 webapps 경로로 이동시킨다. (톰캣 설치 경로/webapps)
+### 프로젝트 war 파일을 webapps 경로로 이동시킨다. (톰캣 설치 경로/webapps)
 ![image](https://user-images.githubusercontent.com/13326651/219394244-7614c19c-b6a9-4a9f-b9a4-8ddf929a22d6.png)
 
 ### server.xml 수정 (톰캣 설치 경로/conf)
@@ -94,6 +94,6 @@ CMD 창에서 프로젝트 경로/build/libs 로 이동, 아래 명령어 입력
 프로젝트 경로로 이동, 아래 명령어 입력   
 ```./gradlew war```
 
-### war는 외장 톰캣으로만 실행이 가능하며, bootWar의 외장 톰캣 실행 방식과 동일한 방법으로 실행가능하다.
+### war는 외장 톰캣으로만 실행이 가능하며, 위의 bootWar의 외장 톰캣 실행 방식과 동일한 방법으로 실행한다.
 
 
