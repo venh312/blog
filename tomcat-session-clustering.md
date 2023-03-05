@@ -4,7 +4,17 @@
 ### ❗️mod.jk 연동이 완료 되었다는 가정하에 진행되었습니다.
 
 
-### ~application 클래스에 ServletWebServerFactory 설정을 추가한다.
+## 프로젝트 설정
+
+### 스프링 - web.xml
+web-app 위에 distributable 추가
+```bash
+<distributable/> 
+</web-app> 
+```
+
+### 스프링부트 - ~application 클래스
+ServletWebServerFactory 설정 추가
 ```java
 @SpringBootApplication
 public class WasApplication {
