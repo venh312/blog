@@ -3,6 +3,33 @@
 
 ### ❗️mod.jk 연동이 완료 되었다는 가정하에 진행되었습니다.
 
+
+### ~application 클래스에 ServletWebServerFactory 설정을 추가한다.
+```java
+@SpringBootApplication
+public class WasApplication {
+  public static void main(String[] args) {
+    SpringApplication.run(WasApplication.class, args);
+  }
+
+  private static boolean distributable;
+
+  public static boolean getDistributable() {
+    return distributable;
+  }
+
+  @Bean
+  public ServletWebServerFactory tomcatFactory() {
+    return new TomcatServletWebServerFactory() {
+      @Override
+      protected void postProcessContext(Context context) {
+        WasTestApplication.distributable = context.getDistributable();
+      }
+    };
+  }
+}
+```
+
 ### wokers.properties (Apache)
 ```
 worker.list=loadbalancer
