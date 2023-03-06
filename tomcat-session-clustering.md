@@ -1,8 +1,7 @@
 ## 아파치 + 톰캣 구성에서의 세션 클러스터링
 ![tomcat-session-clustering drawio](https://user-images.githubusercontent.com/13326651/222946654-7da5814e-a421-411f-813e-f0d2899eb162.png)
 
-### ❗️mod.jk 연동이 완료 되었다는 가정하에 진행되었습니다.
-
+### ❗️ mod.jk 연동이 완료 되었다는 가정하에 진행되었습니다.
 
 ## 프로젝트 설정
 
