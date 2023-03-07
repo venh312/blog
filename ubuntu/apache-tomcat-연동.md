@@ -12,6 +12,8 @@ apt-get install libapache2-mod-jk
 - port : 톰캣의 server.xml에 설정되어있는 ajp 포트
 - host : 톰캣 서버의 ip
 
+#### workers.properties를 만들어서 사용하려면 /etc/apache2/mods-available/jk.conf 에 설정 되어있는 JkWorkersFile /etc/libapache2-mod-jk/workers.properties 부분을 경로와 파일 이름에 맞게 변경한다.
+
 ```bash
 workers.tomcat_home=/usr/share/tomcat8
 workers.java_home=/usr/lib/jvm/default-java
@@ -26,8 +28,6 @@ worker.ajp13_worker.lbfactor=1
 worker.loadbalancer.type=lb
 worker.loadbalancer.balance_workers=ajp13_worker
 ```
-
-별도의 workers.properties를 만들어서 사용하려면 /etc/apache2/mods-available/jk.conf 경로에 설정되어있는 JkWorkersFile /etc/libapache2-mod-jk/workers.properties 부분을 경로와 파일 이름에 맞게 변경한다.
 
 ### 
 ```bash
@@ -53,6 +53,7 @@ worker.loadbalancer.balance_workers=ajp13_worker
  
 </VirtualHost>
 ```
+
 ### 아파치 재시작
 ```bash
 service apache2 restart
