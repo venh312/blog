@@ -6,7 +6,7 @@ apt-get install libapache2-mod-jk
 ```
 
 ### workers.properties (/etc/libapache2-mod-jk)
-- port : 톰캣의 server.xml에 설정되어있는 ajp 포트
+- port : 톰캣의 server.xml에 설정 되어있는 ajp 포트
 - host : 톰캣 서버의 ip
 
 ```bash
