@@ -61,6 +61,7 @@ service apache2 restart
 
 ## 💻 Tomcat이 설치된 서버에서의 작업
 ### server.xml (톰캣설치경로/conf)
+workers.properties에 작성한 port와 같아야 한다.
 ```bash
 <Connector protocol="AJP/1.3"
   address="0.0.0.0"
