@@ -1,9 +1,9 @@
 ## 💻 Apache2가 설치된 서버에서의 작업
 ### 연동 커넥터 mod_jk 설치
+설치가 완료되면 /etc/apache2/mods-available 경로에 jk.conf, jk.load 파일이 생성된다.
 ```bash
 apt-get install libapache2-mod-jk
 ```
-설치가 완료되면 /etc/apache2/mods-available 경로에 jk.conf, jk.load 파일이 생성된다.
 
 ### workers.properties (/etc/libapache2-mod-jk)
 - port : 톰캣의 server.xml에 설정되어있는 ajp 포트
