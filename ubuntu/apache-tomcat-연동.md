@@ -26,7 +26,8 @@ worker.loadbalancer.type=lb
 worker.loadbalancer.balance_workers=ajp13_worker
 ```
 
-#### workers.properties를 만들어서 사용하려면 /etc/apache2/mods-available/jk.conf 에 설정 되어있는 JkWorkersFile /etc/libapache2-mod-jk/workers.properties 부분을 경로와 파일 이름에 맞게 변경한다.
+### workers.properties 설정 하는곳 (/etc/apache2/mods-available/jk.conf)
+JkWorkersFile /etc/libapache2-mod-jk/workers.properties 부분을 경로와 파일 이름에 맞게 변경한다.
 ![image](https://user-images.githubusercontent.com/13326651/223328498-1a826390-eddc-43fb-bf89-54900cd7ed1a.png)
 
 ### VirtualHost 수정 (/etc/apache2/sites-available/000-default.conf)
