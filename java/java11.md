@@ -56,7 +56,7 @@ assertThat(resultString).isEqualTo("JAVA, KOTLIN");
 javac를 통해 컴파일 하지 않고도 java 파일을 실행할 수 있게 되었다.
 
 #### // Java 11 이전
-```$ javac HelloWorld.java```
+```$ javac HelloWorld.java```   
 ```$ java Helloworld```
 #### Hello Java 8!
 
