@@ -36,6 +36,7 @@ List<String> list = Arrays.asList("Java", "\n \n", "Kotlin", " ");
 List withoutBlanks = list.stream() 
  .filter(Predicate.not(String::isBlank))
  .collect(Collectors.toList()); 
+ 
 assertThat(withoutBlanks).containsExactly("Java", "Kotlin");
 ```
 
@@ -47,6 +48,7 @@ List<String> list = Arrays.asList("Java", "Kotlin");
 String resultString = list.stream() 
 .map((@Nonnull var x) -> x.toUpperCase()) 
 .collect(Collectors.joining(", ")); 
+
 assertThat(resultString).isEqualTo("JAVA, KOTLIN");
 ```
 
