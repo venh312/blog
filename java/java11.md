@@ -29,44 +29,38 @@
 - assertThat(sampleArray).containsExactly("Java", "Kotlin");
  
 
-Predicate 인터페이스에 새로운 메소드 추가
-Predicate 인터페이스에 부정을 나타내는 not() 메소드가 추가되었다.
-
- 
-
-List<String> sampleList = Arrays.asList("Java", "\n \n", "Kotlin", " "); 
-List withoutBlanks = sampleList.stream() 
+### Predicate 인터페이스에 새로운 메소드 추가
+Predicate 인터페이스에 부정을 나타내는 not() 메소드가 추가
+```java
+List<String> list = Arrays.asList("Java", "\n \n", "Kotlin", " "); 
+List withoutBlanks = list.stream() 
  .filter(Predicate.not(String::isBlank))
  .collect(Collectors.toList()); 
 assertThat(withoutBlanks).containsExactly("Java", "Kotlin");
- 
+```
 
-람다에서 로컬 변수 Var 사용
+### 람다에서 로컬 변수 Var 사용
 람다식에서 Var을 사용할 수 있게 되었다.
 
- 
-
-List<String> sampleList = Arrays.asList("Java", "Kotlin"); 
-String resultString = sampleList.stream() 
+```java
+List<String> list = Arrays.asList("Java", "Kotlin"); 
+String resultString = list.stream() 
 .map((@Nonnull var x) -> x.toUpperCase()) 
 .collect(Collectors.joining(", ")); 
 assertThat(resultString).isEqualTo("JAVA, KOTLIN");
- 
+```
 
-자바 파일 실행
-javac를 통해 컴파일 하지 않고도, 바로 java 파일을 실행할 수 있게 되었다.
-
- 
+### 자바 파일 실행
+javac를 통해 컴파일 하지 않고도 java 파일을 실행할 수 있게 되었다.
 
 // Java 11 이전
-$ javac HelloWorld.java
-$ java Helloworld
+```$ javac HelloWorld.java```
+```$ java Helloworld```
 Hello Java 8!
 
 // Java 11 이후
-$ java HelloWorld.java
+```$ java HelloWorld.java```
 Hello Java 11!
- 
 
-Garbage Collector
+### Garbage Collector
 Java 11의 Default GC는 G1 GC이다.
