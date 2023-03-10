@@ -55,14 +55,14 @@ assertThat(resultString).isEqualTo("JAVA, KOTLIN");
 ### 자바 파일 실행
 javac를 통해 컴파일 하지 않고도 java 파일을 실행할 수 있게 되었다.
 
-// Java 11 이전
+#### // Java 11 이전
 ```$ javac HelloWorld.java```
 ```$ java Helloworld```
-Hello Java 8!
+#### Hello Java 8!
 
-// Java 11 이후
+#### // Java 11 이후
 ```$ java HelloWorld.java```
-Hello Java 11!
+#### Hello Java 11!
 
 ### Garbage Collector
 Java 11의 Default GC는 G1 GC이다.
