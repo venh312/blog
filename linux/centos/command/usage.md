@@ -1,4 +1,4 @@
-## Memory
+## 📲 Memory
 ### 보통 free -h를 많이 사용
 
 #### 메모리 사용량 확인
@@ -16,7 +16,7 @@
 #### 와이드 모드로 cache와 buffers를 따로 출력
 ```free -w ```
 
-## CPU
+## 📈 CPU
 #### CPU 확인
 ```cat /proc/cpuinfo```
 
@@ -29,7 +29,7 @@
 #### CPU 물리적 코어 개수
 ```grep "cpu cores" /proc/cpuinfo | tail -1```
 
-## Disk
+## 💾 Disk
 ### 보통 df -h를 많이 사용
 
 #### 남은 용량 확인
