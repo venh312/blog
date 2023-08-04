@@ -5,7 +5,7 @@
 - Predicate 인터페이스에 새로운 메소드 추가
 - 람다에서 로컬 변수 Var 사용
 - 자바 파일 실행 방식 단순화
-- HTTP 클라이언트 API: HTTP/2를 지원하는 새로운 클라이언트 API가 추가
+- [HTTP 클라이언트 API: HTTP/2를 지원하는 새로운 클라이언트 API가 추가](https://github.com/conf312/blog/blob/master/java/java11/Http%20API.md)
 
 ### String 클래스에 새로운 6가지 메소드가 추가
 - strip(): 문자열 앞, 뒤의 공백 제거
