@@ -14,3 +14,14 @@ df -h
 ```bash
 free -h
 ```
+
+### 온도 확인
+#### lm-sensors 패키지 설치
+```bash
+sudo apt-get install lm-sensors
+```
+
+#### 설치 후에는 `sensors` 명령어로 온도를 확인할 수 있습니다.
+```bash
+sensors
+```
