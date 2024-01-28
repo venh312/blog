@@ -15,6 +15,11 @@ df -h
 free -h
 ```
 
+### CPU 현재 상태 확인
+```
+top
+```
+
 ### 온도 확인
 #### lm-sensors 패키지 설치
 ```bash
