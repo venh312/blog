@@ -25,7 +25,7 @@ Jenkins 관리 > Plugins
 - Username : 위에서 생성한 키를 등록한 계정 (Ex. root)
 - Remote Directory : 기본으로 설정할 원격지 경로 보통 `/home` 으로 설정한다.
 
-설정이 끝나면 `Test Configuratio`n 으로 접근이 잘 되는지 확인한다.
+설정이 끝나면 `Test Configuration` 으로 접근이 잘 되는지 확인한다.
 
 ### FreeStyle(Item) 설정
 #### Item에서 git 설정 및 배포를 위한 maven, gralde 빌드 커맨드를 **Build Steps**의 shell에 커맨드를 작성한다.
