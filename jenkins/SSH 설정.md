@@ -19,7 +19,7 @@ Jenkins 관리 > Plugins
 #### <1-3-1> 수동으로 등록하는 방법
 원격지 서버에서 `cd ~/.ssh` 경로로 가서 authorized_keys 파일에 id_rsa.pub 내용을 넣는다. 여러 개 있을 경우 줄 바꿈으로 구분해서 넣는다. (이어지지 않게)
 
-### <1-4> SSH Servers 설정
+#### <1-4> SSH Servers 설정
 - Name : 해당 SSH를 구분 할 이름
 - Hostname : 호스트 주소 (IP)
 - Username : 위에서 생성한 키를 등록한 계정 (Ex. root)
