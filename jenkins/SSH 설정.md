@@ -4,22 +4,22 @@
 Jenkins 관리 > Plugins
 
 ### 1. Jenkins 서버 (클라이언트)에서 설정
-#### 1-1 ssh-keygen을 사용해서 RSA private key를 생성
+#### <1-1> ssh-keygen을 사용해서 RSA private key를 생성
 보통 `ssh-keygen` 명령어로 생성이 되나 OPEN SSH 버전에 따라 다르게 생성되기도 한다. (OPEN SSH PRIVATE KEY 등) 이럴 경우 `ssh-keygen -t rsa -b 2048 -m PEM` 명령어로 생성한다. 
 
 패스워드를 입력하려면 하고 생략 가능하다. 생성이 완료되면 `cd ~/.ssh` 경로에 `id_rsa`, `id_rsa.pub` 2개의 파일이 생성된다.
 
-#### 1-2 id_rsa 파일
+#### <1-2> id_rsa 파일
 `id_rsa` 해당 파일의 내용은 jenkins 관리 > System -> Publish over SSH의 Key 영역에 등록 한다.
 
-#### 1-3 id_rsa.pub 파일
+#### <1-3> id_rsa.pub 파일
 ```ssh-copy-id [username]@[remote_host]```
 원격지 username 계정으로 공개키를 등록한다.
 
-#### 1-3-1 수동으로 등록하는 방법
+#### <1-3-1> 수동으로 등록하는 방법
 원격지 서버에서 `cd ~/.ssh` 경로로 가서 authorized_keys 파일에 id_rsa.pub 내용을 넣는다. 여러 개 있을 경우 줄 바꿈으로 구분해서 넣는다. (이어지지 않게)
 
-### 1-4 SSH Servers 설정
+### <1-4> SSH Servers 설정
 - Name : 해당 SSH를 구분 할 이름
 - Hostname : 호스트 주소 (IP)
 - Username : 위에서 생성한 키를 등록한 계정 (Ex. root)
